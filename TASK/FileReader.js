@@ -20,7 +20,7 @@ emitter.on('word',(count)=>{
 })
 
 function countWords(line) {
-    return line.trim().split(/\s+/).filter(Boolean).length;
+    return line.trim().split(' ').filter(Boolean).length;
 }
 
 const fileRead = async (file)=>{
